@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./PersonalForm.css"
+import styles from"./PersonalForm.module.css"
 
 export const PersonalForm = ({addNewPersonalData}) => {
  const [inputName, setInputName] = useState("")
@@ -26,15 +26,15 @@ export const PersonalForm = ({addNewPersonalData}) => {
 
 // console.log(inputName);
   return (
-    <div className='personal-form'>
+    <div className={styles.personalForm}>
 
-     <label>Username</label>
-     <input type="text" value={inputName}  onChange={addUserName}/>
-     <label>Age (Years)</label>
-     <input type="number" value={inputAge} onChange={addUserAge} />
+     <label className={styles.personalFormLabel}>Username</label>
+     <input className={styles.personalFormInput} type="text" value={inputName}  onChange={addUserName}/>
+     <label className={styles.personalFormLabel}>Age (Years)</label>
+     <input className={styles.personalFormInput}  type="number" value={inputAge} onChange={addUserAge} />
 
      <button 
-     className={disabledBtn ? 'btn-add__user' : 'disabled'}
+     className= {disabledBtn ? styles.btnAddUser : styles.disabled}
       onClick={submitData}
       disabled={!disabledBtn} >Add User</button>
 

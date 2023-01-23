@@ -1,7 +1,7 @@
 html{
-    background-color:lightslategrey;
+    background-color:rgb(73, 81, 88);
 }
-.personal-form{
+.personalForm{
  display: flex;
  flex-direction: column;
  width: 45rem;
@@ -12,18 +12,18 @@ html{
  margin-left: -200px;
  margin-top: 3rem;
 }
-.personal-form label{
+.personalFormLabel{
  color: black;
  font-size: 20px;
  text-align: start;
 }
-.personal-form input{
+.personalFormInput{
  width: 100%;
  margin: 20px 0;
  padding: 5px;
 }
-.btn-add__user{
- background-color: rgb(100, 33, 162);
+.btnAddUser{
+ background-color:darkslategrey;
  color: #fff;
  font-size: 15px;
  padding: 15px 25px;
@@ -33,7 +33,7 @@ html{
  height: 50px;
 }
 .disabled{
- background-color: rgb(81, 38, 123);
+ background-color:rgb(61, 108, 108);
  color: #fff;
  font-size: 15px;
  padding: 15px 25px;
