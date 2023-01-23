@@ -24,7 +24,6 @@ export const PersonalForm = ({addNewPersonalData}) => {
  
  const disabledBtn = inputName.trim().length  || inputAge > 0 ? true : false;
 
-// console.log(inputName);
   return (
     <div className={styles.personalForm}>
 
